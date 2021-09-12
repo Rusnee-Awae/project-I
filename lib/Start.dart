@@ -50,9 +50,9 @@ class _StartState extends State<Start> {
       body: Container(
         child: Column(
           children: <Widget>[
-            SizedBox(height: 35.0),
+            SizedBox(height: 1.0),
             Container(
-              height: 400,
+              height: 200,
               child: Image(
                 image: AssetImage("images/start.jpg"),
                 fit: BoxFit.contain,
