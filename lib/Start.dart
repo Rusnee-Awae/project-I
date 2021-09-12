@@ -25,7 +25,7 @@ class _StartState extends State<Start> {
 
         final UserCredential user =
             await _auth.signInWithCredential(credential);
-
+        print("jannn");
         await Navigator.pushReplacementNamed(context, "/");
 
         return user;
