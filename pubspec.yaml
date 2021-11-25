@@ -28,10 +28,18 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  firebase_auth: ^0.18.4+1
+  firebase_auth: ^3.1.4
   flutter_signin_button: ^1.0.0
-  firebase_core: ^0.5.3
+  firebase_core: ^1.8.0
   google_sign_in: ^4.5.9
+  cloud_firestore: ^2.5.4
+  carousel_pro: ^1.0.0
+  flutter_svg: ^0.22.0
+  flutter_custom_clippers: ^2.0.0
+  simple_animations: ^3.2.0
+  page_transition: ^2.0.4
+  firebase_database:
+  cloud_functions: ^3.1.1
 
 
 dev_dependencies:
@@ -50,13 +58,37 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+
   assets:
+    - images/
     - images/start.jpg
     - images/login.jpg
-    - images/welcome.jpg
-    - images/appointment schedule.png
-    - images/doctor.jpg
-    - images/name.jpg
+    - images/images.png
+    - images/setting.png
+    - images/todo.png
+    - images/calendar.png
+    - images/food.png
+    - images/todo1.jpg
+    - images/festival.jpg
+    - images/map.jpg
+    - images/n.jpg
+    - images/doctor.png
+    - images/pen.jpg
+    - images/b.jpg
+    - images/c.jpg
+    - images/t.jpg
+    - images/au.jpg
+    - images/rak.jpg
+    - images/jad.jpg
+    - images/poo.jpg
+    - images/poo1.jpg
+    - images/dr.jpg
+
+
+
+
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -83,3 +115,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+imageCache:
+  clear();:
