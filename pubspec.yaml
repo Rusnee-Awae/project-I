@@ -33,6 +33,7 @@ dependencies:
   firebase_core: ^1.8.0
   google_sign_in: ^4.5.9
   cloud_firestore: ^2.5.4
+<<<<<<< HEAD
   simple_animations: ^4.0.1
   flutter_custom_clippers: ^2.0.0
   page_transition: ^2.0.5
@@ -40,6 +41,15 @@ dependencies:
   firebase_database: ^9.0.6
   form_field_validator: ^1.1.0
 
+=======
+  carousel_pro: ^1.0.0
+  flutter_svg: ^0.22.0
+  flutter_custom_clippers: ^2.0.0
+  simple_animations: ^3.2.0
+  page_transition: ^2.0.4
+  firebase_database:
+  cloud_functions: ^3.1.1
+>>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
 
 
 dev_dependencies:
@@ -58,7 +68,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+
   assets:
+    - images/
     - images/start.jpg
     - images/login.jpg
     - images/images.png
@@ -68,6 +80,7 @@ flutter:
     - images/food.png
     - images/todo1.jpg
     - images/festival.jpg
+<<<<<<< HEAD
     - images/doctor.png
     - images/dr.jpg
     - images/paracetamol.jpg
@@ -88,6 +101,24 @@ flutter:
     - assets/c.jpg
     - assets/d.jpg
     - assets/e.jpg
+=======
+    - images/map.jpg
+    - images/n.jpg
+    - images/doctor.png
+    - images/pen.jpg
+    - images/b.jpg
+    - images/c.jpg
+    - images/t.jpg
+    - images/au.jpg
+    - images/rak.jpg
+    - images/jad.jpg
+    - images/poo.jpg
+    - images/poo1.jpg
+    - images/dr.jpg
+
+
+
+>>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
 
 
 
@@ -117,3 +148,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+imageCache:
+  clear();:

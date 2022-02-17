@@ -13,6 +13,31 @@ class _ShowDataPageState extends State<ShowDataPage> {
   @override
   void initState() {
     DatabaseReference ref = FirebaseDatabase.instance.reference();
+<<<<<<< HEAD
+=======
+    ref.child('Book an appointment').once().then((DataSnapshot snap) {
+      var keys = snap.value.keys;
+      var data = snap.value;
+      allData.clear();
+      for (var key in keys) {
+        myData d = new myData(
+          data[key]['name'],
+          data[key]['lastname'],
+          data[key]['Date'],
+          data[key]['Time'],
+          data[key]['list'],
+          data[key]['note'],
+          data[key]['message'],
+          data[key]['profession'],
+
+        );
+        allData.add(d);
+      }
+      setState(() {
+        print('Length : ${allData.length}');
+      });
+    });
+>>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
   }
 
   @override
@@ -50,7 +75,11 @@ class _ShowDataPageState extends State<ShowDataPage> {
         child: new Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+<<<<<<< HEAD
             new Text('Name : $name',style: Theme.of(context).textTheme.subtitle1,),
+=======
+            new Text('Name : $name',style: Theme.of(context).textTheme.title,),
+>>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
             new Text('Lastname : $lastname'),
             new Text('Date : $Date'),
             new Text('List : $list'),

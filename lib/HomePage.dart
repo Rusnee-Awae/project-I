@@ -1,6 +1,7 @@
 import 'dart:ffi';
 import 'package:authentification/Start.dart';
 import 'package:authentification/book/book.dart';
+<<<<<<< HEAD
 import 'package:authentification/guidance/main.dart';
 import 'package:authentification/guidance/wineDetail.dart';
 import 'package:authentification/medicine/medicine.dart';
@@ -8,6 +9,11 @@ import 'package:authentification/medicine/secondPage.dart';
 import 'package:authentification/op/explore.dart';
 import 'package:authentification/payment/payment.dart';
 import 'package:authentification/personal/profilepage.dart';
+=======
+import 'package:authentification/medicine/medicine.dart';
+import 'package:authentification/payment/payment.dart';
+import 'package:authentification/personal.dart';
+>>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
@@ -17,10 +23,16 @@ import 'gridDashboard.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 //import 'package:firebase_core/firebase_core.dart';
 import 'package:authentification/Gu.dart';
+<<<<<<< HEAD
 
 
 
 
+=======
+import 'orthodontic.dart';
+import 'package:authentification/book/book.dart';
+import 'package:authentification/personal/persona.dart';
+>>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
 
 
 class HomePage extends StatefulWidget {
@@ -189,7 +201,11 @@ class _HomePageState extends State<HomePage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
+<<<<<<< HEAD
                                     builder: (context) => ProfilePage()),
+=======
+                                    builder: (context) => persona()),
+>>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
                               );
                             },
                             child: Text('Go to 1 !'),
@@ -231,7 +247,11 @@ class _HomePageState extends State<HomePage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
+<<<<<<< HEAD
                                     builder: (context) =>Explore()), //กดlinkหน้า
+=======
+                                    builder: (context) => personal()), //กดlinkหน้า
+>>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
                               );
                             },
                             child: Text('Go to 2 !'),
@@ -329,7 +349,11 @@ class _HomePageState extends State<HomePage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
+<<<<<<< HEAD
                                     builder: (context) => MyHomePage()), //กดlinkหน้า
+=======
+                                    builder: (context) => treeRoute()), //กดlinkหน้า
+>>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
                               );
                             },
                             child: Text('Go to 4 !'),
