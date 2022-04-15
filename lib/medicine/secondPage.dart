@@ -31,11 +31,7 @@ class _SecondPageState extends State<SecondPage> {
                   color: primaryColor,
                   child: FadeAnimation(
                     delay: 1,
-<<<<<<< HEAD
-                    child: Image.asset("images/dr.jpg"),
-=======
                     child: Image.asset("images/doctor.png"),
->>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
                   ),
                 ),
               ),
@@ -104,24 +100,14 @@ class _SecondPageState extends State<SecondPage> {
               ),
               Container(
                 width: MediaQuery.of(context).size.width,
-<<<<<<< HEAD
-                height: 300,
-=======
                 height: 250,
->>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
                 child: ListView(
                   physics: BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-<<<<<<< HEAD
-                    symptom(image: "images/paracetamol.jpg", title: "Paracetamol"),
-                    symptom(image: "images/paracetamol.jpg", title: "Ibuprofen"),
-                    symptom(image: "images/paracetamol.jpg", title: "Mefenamic acid"),
-=======
                     symptom(image: "images/cough.png", title: "Paracetamol"),
                     symptom(image: "images/fever.png", title: "Ibuprofen"),
                     symptom(image: "images/headache.png", title: "Mefenamic acid"),
->>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
                   ],
                 ),
               ),
@@ -146,21 +132,12 @@ class _SecondPageState extends State<SecondPage> {
                   scrollDirection: Axis.horizontal,
                   physics: BouncingScrollPhysics(),
                   children: <Widget>[
-<<<<<<< HEAD
-                    prevention(image: "images/paracetamol.jpg", title: "Wash Hands"),
-                    prevention(
-                        image: "images/paracetamol.jpg", title: "Avoid Touching Face"),
-                    prevention(image: "images/mask.png", title: "Wear Mask"),
-                    prevention(
-                        image: "images/paracetamol.jpg",
-=======
                     prevention(image: "images/hand.png", title: "Wash Hands"),
                     prevention(
                         image: "images/face.png", title: "Avoid Touching Face"),
                     prevention(image: "images/mask.png", title: "Wear Mask"),
                     prevention(
                         image: "images/handshake.png",
->>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
                         title: "Avoid Handshakes"),
                   ],
                 ),
@@ -179,11 +156,7 @@ class _SecondPageState extends State<SecondPage> {
     return FadeAnimation(
       delay: 4,
       child: Container(
-<<<<<<< HEAD
-        width: 450,
-=======
         width: 350,
->>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
         margin: EdgeInsets.only(right: 20),
         child: Card(
           elevation: 16,
@@ -194,7 +167,10 @@ class _SecondPageState extends State<SecondPage> {
               children: <Widget>[
                 Align(
                   alignment: Alignment.center,
-                  child: Image.asset(image),
+                  child: Container(
+                      height: 120,
+                      width: 120,
+                      child: Image.asset("images/paracetamol.jpg")),
                 ),
                 SizedBox(width: 5),
                 Padding(
@@ -217,11 +193,6 @@ class _SecondPageState extends State<SecondPage> {
                       SizedBox(
                         height: 10,
                       ),
-                      Text("READ MORE",
-                          style: TextStyle(
-                            color: Colors.green,
-                            fontSize: 15,
-                          ))
                     ],
                   ),
                 )
@@ -246,10 +217,7 @@ class _SecondPageState extends State<SecondPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Align(
-                  alignment: Alignment.center,
-                  child: Image.asset(image),
-                ),
+
                 SizedBox(
                   height: 5,
                 ),
@@ -263,6 +231,7 @@ class _SecondPageState extends State<SecondPage> {
                               color: Colors.black87,
                               fontSize: 23,
                               fontWeight: FontWeight.bold)),
+
                       SizedBox(
                         height: 10,
                       ),
@@ -273,13 +242,6 @@ class _SecondPageState extends State<SecondPage> {
                       SizedBox(
                         height: 10,
                       ),
-                      InkWell(
-                        onTap: () {},
-                        child: Text(
-                          "READ MORE",
-                          style: TextStyle(color: Colors.green, fontSize: 15),
-                        ),
-                      )
                     ],
                   ),
                 )

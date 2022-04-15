@@ -1,4 +1,5 @@
 import 'package:authentification/medicine/animation.dart';
+import 'package:authentification/medicine/home_page.dart';
 import 'package:authentification/medicine/secondPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';

@@ -33,23 +33,24 @@ dependencies:
   firebase_core: ^1.8.0
   google_sign_in: ^4.5.9
   cloud_firestore: ^2.5.4
-<<<<<<< HEAD
   simple_animations: ^4.0.1
-  flutter_custom_clippers: ^2.0.0
   page_transition: ^2.0.5
   google_fonts: ^2.2.0
-  firebase_database: ^9.0.6
   form_field_validator: ^1.1.0
-
-=======
   carousel_pro: ^1.0.0
   flutter_svg: ^0.22.0
   flutter_custom_clippers: ^2.0.0
-  simple_animations: ^3.2.0
-  page_transition: ^2.0.4
   firebase_database:
   cloud_functions: ^3.1.1
->>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
+  image_cropper: ^1.4.1
+  image_picker: ^0.8.2
+  path_provider: ^2.0.2
+  flutter_image_compress: ^1.0.0
+  firebase_storage: ^10.0.1
+  flutter_swiper: ^1.1.6
+  get:
+  flutter_animation_progress_bar: ^2.1.1
+
 
 
 dev_dependencies:
@@ -80,7 +81,6 @@ flutter:
     - images/food.png
     - images/todo1.jpg
     - images/festival.jpg
-<<<<<<< HEAD
     - images/doctor.png
     - images/dr.jpg
     - images/paracetamol.jpg
@@ -101,7 +101,7 @@ flutter:
     - assets/c.jpg
     - assets/d.jpg
     - assets/e.jpg
-=======
+
     - images/map.jpg
     - images/n.jpg
     - images/doctor.png
@@ -115,13 +115,7 @@ flutter:
     - images/poo.jpg
     - images/poo1.jpg
     - images/dr.jpg
-
-
-
->>>>>>> 024f99e7b12d1ffa204bc4664e283375523f29a3
-
-
-
+    - images/prom.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,10 +1,10 @@
 class Student{
   String fname;
-  String lname;
+  String Date;
   String email;
-  String score;
+  String list;
   String time;
 
-  Student({this.fname,this.lname,this.email,this.score,this.time});
+  Student({this.fname,this.Date,this.email,this.list,this.time});
 
 }

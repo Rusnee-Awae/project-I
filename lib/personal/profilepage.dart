@@ -43,8 +43,6 @@ class ProfilePage extends StatelessWidget {
         ),
       ),
 
-
-
       body: Stack(
         alignment: Alignment.center,
         children: [
@@ -52,7 +50,7 @@ class ProfilePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
-                height: 400,
+                height: 680,
                 width: double.infinity,
                 margin: EdgeInsets.symmetric(horizontal: 10),
                 child: StreamBuilder(stream: Profile.snapshots(),
@@ -67,14 +65,14 @@ class ProfilePage extends StatelessWidget {
                             Container(
 
                               child: Padding(
-                                  padding:const EdgeInsets.all(10.0),
+                                  padding:const EdgeInsets.all(9.0),
                                   child:Column(
                                       children: <Widget>[
-                                        Container(color: Colors.pink, padding: EdgeInsets.all(10.0),
+                                        Container(color: Colors.cyan, padding: EdgeInsets.all(10.0),
                                           child: SizedBox(
-                                            child: Column(
+                                            child: Row(
                                               children: [
-                                                Text( 'Patient History', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                                Text ( 'Patient History', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                                 ),
                                               ],
                                             ),
@@ -82,59 +80,86 @@ class ProfilePage extends StatelessWidget {
                                           ),
                                         ),
 
-                                        Row(
-                                          children: [
-                                            Text( 'ชื่อ-นามสกุล :${data.docs[index]['ชื่อ-นามสกุล']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                                            ),
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'ชื่อ-นามสกุล :${data.docs[index]['ชื่อ-นามสกุล']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
                                         ),
-                                        Row(
-                                          children: [
-                                            Text( 'น้ำหนัก :${data.docs[index]['น้ำหนัก']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                                            ),
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(5.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'น้ำหนัก :${data.docs[index]['น้ำหนัก']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
                                         ),
-                                        Row(
-                                          children: [
-                                            Text( 'เพศ :${data.docs[index]['เพศ']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                                            ),
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(5.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'เพศ :${data.docs[index]['เพศ']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
                                         ),
-                                        Row(
-                                          children: [
-                                            Text( 'อายุ :${data.docs[index]['อายุ']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                                            ),
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(3.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'อายุ :${data.docs[index]['อายุ']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
                                         ),
-                                        Row(
-                                          children: [
-                                            Text( 'กรุ๊ปเลือด :${data.docs[index]['กรุ๊ปเลือด']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                                            ),
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(5.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'กรุ๊ปเลือด :${data.docs[index]['กรุ๊ปเลือด']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
                                         ),
-                                        Row(
-                                          children: [
-                                            Text( 'ส่วนสูง :${data.docs[index]['ส่วนสูง']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                                            ),
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(5.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'ส่วนสูง :${data.docs[index]['ส่วนสูง']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
                                         ),
-                                        Row(
-                                          children: [
-                                            Text( 'น้ำหนัก :${data.docs[index]['น้ำหนัก']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                                            ),
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(5.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'น้ำหนัก :${data.docs[index]['น้ำหนัก']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
                                         ),
-                                        Row(
-                                          children: [
-                                            Text( 'แพ้ยา :${data.docs[index]['แพ้ยา']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                                            ),
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(5.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'แพ้ยา :${data.docs[index]['แพ้ยา']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
                                         ),
-                                        Row(
-                                          children: [
-                                            Text( 'โรคประจำตัว :${data.docs[index]['โรคประจำตัว']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                                            ),
-                                          ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(5.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'โรคประจำตัว :${data.docs[index]['โรคประจำตัว']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
                                         ),
 
                                         Container(color: Colors.white, padding: EdgeInsets.all(8.0),
@@ -145,6 +170,67 @@ class ProfilePage extends StatelessWidget {
                                               ],
                                             ),
                                         ),
+
+                                        Container(color: Colors.cyan, padding: EdgeInsets.all(10.0),
+                                          child: SizedBox(
+                                            child: Row(
+                                              children: [
+                                                Text( 'Treatment history',
+                                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+
+                                                ),
+                                              ],
+                                            ),
+
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'ทันตกรรมจัดฟัน :${data.docs[index]['ทันตกรรมจัดฟัน']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'ค่าใช้จ่ายตลอดการรักษา :${data.docs[index]['ค่าใช้จ่ายตลอดการรักษา']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'เดือน :${data.docs[index]['เดือน']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'จำนวนเงินชำระ :${data.docs[index]['จำนวนเงินชำระ']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Row(
+                                            children: [
+                                              Text( 'ยอกชำระคงเหลือ :${data.docs[index]['ยอกชำระคงเหลือ']}', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+
+
 
 
                                       ]
@@ -160,13 +246,6 @@ class ProfilePage extends StatelessWidget {
               )
               )],
           ),
-          CustomPaint(
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
-            ),
-            painter: HeaderCurvedContainer(),
-          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -177,40 +256,14 @@ class ProfilePage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 35,
                     letterSpacing: 1.5,
-                    color: Colors.white,
+                    color: Colors.black,
                     fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.all(5.0),
-                width: MediaQuery.of(context).size.width / 2,
-                height: MediaQuery.of(context).size.width / 2,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 5),
-                  shape: BoxShape.circle,
-                  color: Colors.white,
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage('images/todo1.jpg'),
                   ),
                 ),
               ),
             ],
           ),
-          Padding(
-            padding: EdgeInsets.only(bottom: 250, left: 184),
-            child: CircleAvatar(
-              backgroundColor: Colors.black54,
-              child: IconButton(
-                icon: Icon(
-                  Icons.edit,
-                  color: Colors.white,
-                ),
-                onPressed: () {},
-              ),
-            ),
-          )
+
         ],
       ),
     );
