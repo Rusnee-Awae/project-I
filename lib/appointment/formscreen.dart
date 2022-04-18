@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, unnecessary_statements, unused_label
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -149,30 +149,19 @@ class _FormScreenState extends State<FormScreen> {
                         ),
 
                         Container(
-                          height: 100,
+                          height: 52,
                           decoration: BoxDecoration(
                               border: Border.all(
                                   color: Colors.grey,
                                   width: 1.0
                               )
                           ),
-
-                          child: Column(
-                            children: <Widget>[
-                              SizedBox(
-                                height: 90,
-                                child: CupertinoDatePicker(
-                                    initialDateTime: _dateTime,
-                                    onDateTimeChanged: (dateTime){
-                                      print(dateTime);
-                                      setState(() {
-                                        _dateTime = dateTime;
-                                      });
-                                    }
-
-                                ),
-                              )
-                            ],
+                          child: TextFormField(
+                            validator: RequiredValidator(
+                                errorText: "กรุณาป้อนชื่อด้วยครับ ^^"),
+                            onSaved: (String dateTime) {
+                              myStudent.dateTime = dateTime;
+                            },
                           ),
                         ),
 
@@ -245,7 +234,7 @@ class _FormScreenState extends State<FormScreen> {
                                   formKey.currentState.save();
                                     await _appointmentCollection.add({
                                     "fname":myStudent.fname,
-                                    "Date":myStudent.Date,
+                                    "dateTime":myStudent.dateTime,
                                     "email":myStudent.email,
                                     "list":myStudent.list,
                                       "time":myStudent.time

@@ -35,7 +35,7 @@ class _DisplayScreenState extends State<DisplayScreen> {
                       title: SizedBox(
                         height: 18,
                         child: Container(
-                          child: Text(document["fname"] +document["Date"] +document["time"]),
+                          child: Text(document["fname"] +document["dateTime"] +document["time"]),
                         ),
                       ),
                       subtitle: Container(

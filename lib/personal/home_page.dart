@@ -38,15 +38,6 @@ class _HomePage2State extends State<HomePage2> {
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    Text(
-                      'และ',
-                      style: TextStyle(
-                        fontFamily: 'Avenir',
-                        fontSize: 40,
-                        color: const Color(0xffffffff),
-                        fontWeight: FontWeight.w900,
-                      ),
-                    ),
                   ],
                 ),
               ),
